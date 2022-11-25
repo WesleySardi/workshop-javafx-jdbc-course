@@ -49,7 +49,7 @@ public class DepartmentListController implements Initializable {
     }
 
     private void initializeNodes() {
-        tableColumnId.setCellValueFactory(new PropertyValueFactory<>("id"));
+        tableColumnId.setCellValueFactory(new PropertyValueFactory<>("id"));     //https://stackoverflow.com/questions/63503607/javafx-cannot-retrieve-property-in-propertyvaluefactory-even-though-correct-varp
         tableColumnName.setCellValueFactory(new PropertyValueFactory<>("name"));
 
         Stage stage = (Stage) Main.getMainScene().getWindow();
